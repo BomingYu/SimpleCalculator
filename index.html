@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet&family=Righteous&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="bodySection">
+      <div class="calculatorBody">
+        <div class="screenDiv">
+          <input type="text" readonly value="0" class="screen" id="topScreen" />
+          <input type="text" readonly value="0" class="screen" id="lowScreen" />
+        </div>
+        <div class="btnsArea">
+          <div class="clearBtnsDiv">
+            <button class="clearBtns" id="delBtn" onclick="delBtn()">Del.</button>
+            <button class="clearBtns" id="ceBtn" onclick="ceBtn()">CE</button>
+          </div>
+          <div class="mainBtnsDiv">
+            <button class="mainBtn" onclick="click_7()">7</button>
+            <button class="mainBtn" onclick="click_8()">8</button>
+            <button class="mainBtn" onclick="click_9()">9</button>
+            <button class="mainBtn" onclick="click_Dev()">/</button>
+            <button class="mainBtn" onclick="click_4()">4</button>
+            <button class="mainBtn" onclick="click_5()">5</button>
+            <button class="mainBtn" onclick="click_6()">6</button>
+            <button class="mainBtn" onclick="click_Time()">x</button>
+            <button class="mainBtn" onclick="click_1()">1</button>
+            <button class="mainBtn" onclick="click_2()">2</button>
+            <button class="mainBtn" onclick="click_3()">3</button>
+            <button class="mainBtn" onclick="click_Min()">-</button>
+            <button class="mainBtn" onclick="click_0()">0</button>
+            <button class="mainBtn" id="pointBtn" onclick="click_Pnt()">.</button>
+            <button class="mainBtn" onclick="click_Eql()">=</button>
+            <button class="mainBtn" onclick="click_Pls()">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
